@@ -147,27 +147,28 @@
       <div class="span4">
         <h1>Why AngularDart?</h1>
         <p>
-          HTML is great for declaring static documents, but it falters when we try to use it for
-          declaring dynamic views in web-applications. AngularDart lets you extend HTML vocabulary
-          for your application. The resulting environment is extraordinarily expressive, readable,
-          and quick to develop.
+          HTML is great for declaring static documents, but it falters when we
+          try to use it for declaring dynamic views in web applications.
+          AngularDart lets you extend HTML vocabulary for your application. The
+          resulting environment is extraordinarily expressive, readable, and
+          quick to develop.
         </p>
       </div>
       <div class="span4">
         <h1>Alternatives</h1>
         <p>
-          Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS,
-          and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of
-          these address the root problem that HTML was not designed for dynamic views.
+          Other frameworks deal with HTML’s shortcomings by either abstracting
+          away HTML, CSS, and/or scripting or by providing an imperative way for
+          manipulating the DOM. Neither of these address the root problem that
+          HTML was not designed for dynamic views.
         </p>
       </div>
       <div class="span4">
-        <h1>Extensibility</h1>
+        <h1>Works Well with Others</h1>
         <p>
-          AngularDart is a toolset for building the framework most suited to your application
-          development. It is fully extensible and works well with other libraries. Every feature
-          can be modified or replaced to suit your unique development workflow and feature needs.
-          Read on to find out how.
+          AngularDart is built on top of the Web Components and Shadow Dom
+          standards, so components build with AngularDart are interoperable with
+          components from other frameworks that implement those standards.
         </p>
       </div>
     </div>
@@ -200,25 +201,28 @@
       <div class="span4">
         <h3>Data Binding</h3>
         <p>
-          Data-binding is an automatic way of updating the view whenever the model changes, as
-          well as updating the model whenever the view changes. This is awesome because it
-          eliminates DOM manipulation from the list of things you have to worry about.
+          Data binding is an automatic way of updating the view whenever the
+          model changes, as well as updating the model whenever the view
+          changes. This is awesome because it eliminates DOM manipulation from
+          the list of things you have to worry about.
         </p>
       </div>
       <div class="span4">
         <h3>Controller</h3>
         <p>
-          Controllers are the behavior behind the DOM elements. AngularDart lets you express the
-          behavior in a clean readable form without the usual boilerplate of updating the DOM,
-          registering callbacks or watching model changes.
+          Controllers are the behavior behind the DOM elements. AngularDart lets
+          you express the behavior in a clean readable form without the usual
+          boilerplate of updating the DOM, registering callbacks or watching
+          model changes.
         </p>
       </div>
       <div class="span4">
-        <h3>Plain Script</h3>
+        <h3>Plain Dart</h3>
         <p>
-          Unlike other frameworks, there is no need to inherit from proprietary types; to wrap the
-          model in accessors methods. Just plain old Dart here. This makes your code easy to
-          test, maintain, reuse, and again free from boilerplate.
+          Unlike other frameworks, there is no need to inherit from proprietary
+          types in order to wrap the model in accessors methods. Angular models
+          are plain old Dart objects. This makes your code easy to test,
+          maintain, reuse, and again free from boilerplate.
         </p>
       </div>
     </div>
@@ -270,27 +274,24 @@
       <div class="span4">
         <h3>Deep Linking</h3>
         <p>
-          A deep link reflects where the user is in the app, this is useful so users can bookmark
-          and email links to locations within apps. Round trip apps get this automatically, but
-          AJAX apps by their nature do not. AngularDart combines the benefits of deep link with
-          desktop app-like behavior.
+          *** TO DO: Describe support for Dart 3rd party deep linking library
+          ***
         </p>
       </div>
       <div class="span4">
         <h3>Form Validation</h3>
         <p>
-          Client-side form validation is an important part of great user experience.
-          AngularDart lets you declare the validation rules of the form without having to write
-          JavaScript code. Write less code, go have beer sooner.
+          Client-side form validation is an important part of great user
+          experience. AngularDart lets you declare the validation rules of the
+          form without having to write Dart code. Write less code, go have beer
+          sooner.
         </p>
       </div>
       <div class="span4">
         <h3>Server Communication</h3>
         <p>
-          AngularDart provides services on top of XHR, that dramatically simplify your code. We wrap
-          XHR to give you exception management and promises. Promises further simplify your code
-          by handling asynchronous return of data. This lets you assign properties synchronously
-          when the return is actually asynchronous.
+          *** TO DO: Describe how AngularDart leverages Dart zones for
+          asynchronous server communications ***
         </p>
       </div>
     </div>
@@ -315,24 +316,24 @@
       <div class="span4">
         <h3>Components</h3>
         <p>
-          Components is a unique and powerful feature available only in Angular.
-          Components let you invent new HTML syntax, specific to your
-          application.
+          Components is a powerful feature of Angular that let you invent new
+          HTML syntax specific to your application.
         </p>
       </div>
       <div class="span4">
         <h3>Reusable</h3>
         <p>
-          A component allows you to hide complex
-          DOM structure, CSS, and behavior. This lets you focus either on what
-          the application does or how the application looks separately.
+          A component allows you to hide complex DOM structure, CSS, and
+          behavior. This lets you focus on what the application does and how the
+          application looks separately.
         </p>
       </div>
       <div class="span4">
         <h3>Localization</h3>
         <p>
           An important part of serious apps is localization. Angular works with
-          Dart localization to make your application available in all locales.
+          Dart's localization support to give you building blocks to make your
+          application available in all locales.
         </p>
       </div>
     </div>
@@ -369,35 +370,32 @@
       </div>
     </div>
 
-    <h1 id="embed-and-inject">Embed and Inject</h1>
+    <h1 id="embed-and-inject">Structured, Testable, Maintainable</h1>
     <div class="row">
       <div class="span4">
-        <h3>Embeddable</h3>
+        <h3>Supercharged by Dart</h3>
         <p>
-          AngularDart works great with other technologies. Add as much or as little of AngularDart to
-          an existing page as you like. Many other frameworks require full commitment. This page
-          has multiple AngularDart applications embedded in it. Because AngularDart has no global
-          state multiple apps can run on a single page without the use of <code>iframe</code>s. We
-          encourage you to view-source and look around.
+          AngularDart takes advantage of Dart language features like classes and
+          annotations to keep applications structured and maintainable even as
+          they scale in complexity.
         </p>
       </div>
       <div class="span4">
         <h3>Injectable</h3>
         <p>
-          The dependency injection in AngularDart allows you to declaratively describe how your
-          application is wired. This means that your application needs no <code>main()</code>
-          method which is usually an unmaintainable mess. Dependency injection is core to
-          AngularDart. This means that any component which does not fit your needs can easily be
-          replaced.
+          The dependency injection in AngularDart allows you to declaratively
+          describe how your applications are wired, minimizing coupling between
+          different parts of those applications. Dependency injection is core to
+          AngularDart, so any component which does not fit your needs can easily
+          be replaced.
         </p>
       </div>
       <div class="span4">
-        <h3>Testable</h3>
+        <h3>Test Friendly</h3>
         <p>
-          AngularDart was designed from ground up to be testable. It encourages behavior-view
-          separation, comes pre-bundled with mocks, and takes full advantage of dependency
-          injection. It also comes with end-to-end scenario runner which eliminates test flakiness
-          by understanding the inner workings of AngularDart.
+          AngularDart was designed from the ground up to be testable. It
+          encourages behavior-view separation, comes pre-bundled with mocks, and
+          takes full advantage of dependency injection.
         </p>
       </div>
     </div>
